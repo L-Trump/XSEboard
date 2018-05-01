@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="电子班牌引导页">
+    <meta name="viewport" content="width=device-width">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="vk_loader.js?vk_layout=CN%20Chinese%20Simpl.%20Pinyin&amp;vk_skin=flat_gray"></script>
+    <!--<script type="text/javascript" src="jquery-1.8.2.min.js"></script> -->
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>function urla() {
+        VirtualKeyboard.toggle('url', 'vk_div');
+        $("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+      }
+      function baidusearcha() {
+        VirtualKeyboard.toggle('baidusearch', 'vk_div');
+        $("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+      }</script>
+    <script language="javascript" type="text/javascript">function btnNum_onclick(i) {
+        url.value = url.value + i;
+      }
+
+      function clearText() {
+        document.getElementById("url").value = "";
+      }
+      function btnEnter_onclick() {
+        var value = document.getElementById("url").value;
+        alert(value);
+      }
+      function delText() {
+        var value = document.getElementById("url").value;
+        var str = value.substring(0, value.length - 1);
+        document.getElementById("url").value = str;
+      }</script>
+    <style type="text/css">.align-center{ margin:0 auto; width:653px; }</style>
+    <title>电子班牌网址导航</title></head>
+  <div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner align-center" id="vk_div"></div>
+  </div>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <h3 class="text-center">电子班牌网址导航</h3>
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="URL" class="col-sm-3 control-label">网址:http(s)://</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="url" onfocus="urla();" onblur="urla();" /></div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-block btn-primary" onclick="location.href='http://'+document.getElementById('url').value;">提交</button></div>
+          </div>
+          <div class="form-group">
+            <label for="Baidu" class="col-sm-3 control-label">百度搜索:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="baidusearch" onfocus="baidusearcha();" onblur="baidusearcha();" /></div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-block btn-primary" onclick="location.href='http://www.baidu.com/#ie=&amp;wd='+document.getElementById('baidusearch').value;">提交</button></div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-block btn-primary" onclick="document.getElementById('baidusearch').value = ''">清空</button></div>
+          </div>
+        </form>
+        <p class="text-center">使用方法：1、点击想要的功能，例如百度搜索 2、输入文字 3、点击Submit
+          <br>=============================================================================
+          <br>英译中翻译工具，点击按钮后直接输入英文并点上面的 Submit 按钮</p>
+        <div class="row clearfix">
+          <div class="col-md-1 column"></div>
+          <div class="col-md-2 column"></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-lg btn-primary btn-block" onclick="btnNum_onclick('fanyi.baidu.com/#en/zh/')">百度翻译</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="btnNum_onclick('translate.google.cn/#en/zh-CN/')">谷歌翻译</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-block btn-primary btn-lg" onclick="clearText()">清空网址</button></div>
+          <div class="col-md-2 column"></div>
+          <div class="col-md-1 column"></div>
+        </div>
+        <br>
+        <p class="text-center">快捷按钮</p>
+        <div class="row clearfix">
+          <div class="col-md-1 column"></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-block btn-lg btn-primary" onclick="btnNum_onclick('www.');">www.</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-lg btn-primary btn-block" onclick="btnNum_onclick('.com');">.com</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-primary btn-block btn-lg" onclick="btnNum_onclick(' ');">空Space格</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-lg btn-block btn-primary" onclick="btnNum_onclick('.cn');">.cn</button></div>
+          <div class="col-md-2 column">
+            <button type="button" class="btn btn-lg btn-block btn-primary" onclick="btnNum_onclick('.net');">.net</button></div>
+          <div class="col-md-1 column"></div>
+        </div>
+        <table>
+          <!--快捷网址-->
+          <p class="text-left">
+            <a href="http://www.nbxiaoshi.net/index.main.asp">效实官网</a>
+            <a href="http://www.nbxiaoshi.net/dpm_jxl.asp">教学楼电子屏</a>
+            <a href="http://www.manunited.com.cn/">Man Utd</a>
+            <a href="/test.php">测试模式</a></p>
+          <p class="text-left">快捷网址
+            <br>===================使用说明=====================</p>
+          <p class="text-left">这是一个简单的可以直接在学校电子班牌上使用的网页；
+            <br />现有功能：
+            <br />1、使用虚拟键盘输入，直接打开网址；
+            <br />2、提供能够快速使用的 Google翻译/百度翻译 英译中；
+            <br />3、快速使用百度搜索（仅限英文）；
+            <br />4、打开提前设置的快捷网址，目前包括①效实官网 ②教学楼电子屏。
+            <br />
+            <br /></p>
+          <p class="text-left">=================================================</p>
+          <p class="text-left">Redesigned by Trump; Forked From HKK; VirtualKeyboard Forked From Github</p>
+          <p class="text-left"></p>
+          <p class="text-left">&copy;example.com, 2017-2018</p></table>
+      </div>
+    </div>
+  </div>

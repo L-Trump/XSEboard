@@ -65,7 +65,7 @@
         i.preventDefault(); i.stopPropagation();
     }; var d = function (i) {
         var e = DOM.getParent(i.srcElement || i.target, 'a'); if (!e || e.parentNode.id.indexOf(Q) < 0) return; e = e.parentNode; var iI = X; var il = e.id.substring(Q.length); switch (il) {
-            case "caps": iI = iI ^ s; break; case "input_method": if (document.getElementById("kb_langselector").value == 'US US') { $("#kb_binput_method a").css("background-position", "-453px -114px"); VirtualKeyboard.switchLayout("CN Chinese Simpl. Pinyin"); }
+            case "caps": iI = iI ^ s; break; case "input_method": if (document.getElementById("kb_langselector").value == 'US US') { $("#kb_binput_method a").css("background-position", "-680px -171px"); VirtualKeyboard.switchLayout("CN Chinese Simpl. Pinyin"); }
                 else { VirtualKeyboard.switchLayout("US US"); }
                 break; case "shift_left": case "shift_right": if (i.shiftKey) break; iI = iI ^ Z; break; case "alt_left": case "alt_right": case "ctrl_left": case "ctrl_right": iI = iI ^ (i.altKey << 1 ^ w) ^ (i.ctrlKey << 2 ^ W); break; default: if (_) DOM.CSS(e).addClass(y.buttonDown); break
         }
