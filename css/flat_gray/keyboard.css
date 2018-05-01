@@ -230,7 +230,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
         background-position: -258px -228px;
 }
 #kbDesk div#kb_bcaps.kbButtonDown a {
-        background-position: -228px -285px;
+        background-position: -258px -285px;
 }
 #kbDesk div#kb_bshift_left,
 #kbDesk div#kb_bshift_right {
